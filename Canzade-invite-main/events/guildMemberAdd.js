@@ -27,7 +27,7 @@ module.exports = class {
       let isMemberFake = (Date.now() - member.user.createdTimestamp) < 7*24*60*60*1000;
     
       if (invite === member.guild.vanityURLCode) channel.send(`
-Middle Earth'a hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş. ${isMemberFake ? `🚫` : ``}
+Valena'ya hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş. ${isMemberFake ? `🚫` : ``}
     
 Sunucuya erişebilmek için "V.Confirmed" odalarında kayıt olup isim yaş belirtmen gerekmektedir.    
 Sunucu kurallarımız ${kurallar} kanalında belirtilmiştir. Unutma sunucu içerisindeki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.
@@ -43,7 +43,7 @@ Seninle beraber ${member.guild.memberCount} kişiyiz. 🎉🎉🎉
         const inviterData = await inviterSchema.findOne({ guildID: member.guild.id, userID: invite.inviter.id });
         const total = inviterData ? inviterData.total : 0;
         channel.send(`
-Middle Earth'a hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş. 🚫
+Valena'ya hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş. 🚫
     
 Sunucuya erişebilmek için "V.Confirmed" odalarında kayıt olup isim yaş belirtmen gerekmektedir.      
 Sunucu kurallarımız ${kurallar} kanalında belirtilmiştir. Unutma sunucu içerisindeki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.
@@ -56,7 +56,7 @@ Seninle beraber ${member.guild.memberCount} kişiyiz. ${invite.inviter} tarafın
         const inviterData = await inviterSchema.findOne({ guildID: member.guild.id, userID: invite.inviter.id });
         const total = inviterData ? inviterData.total : 0;
         channel.send(`
-Middle Earth'a hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş.
+Valena'ya hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş.
     
 Sunucuya erişebilmek için "V.Confirmed" odalarında kayıt olup isim yaş belirtmen gerekmektedir.     
 Sunucu kurallarımız ${kurallar} kanalında belirtilmiştir. Unutma sunucu içerisindeki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek.
@@ -64,7 +64,7 @@ Sunucu kurallarımız ${kurallar} kanalında belirtilmiştir. Unutma sunucu içe
 Seninle beraber ${member.guild.memberCount} kişiyiz. ${invite.inviter} tarafından davet edildin ve bu kişinin ${total} daveti oldu! 🎉🎉🎉
     `);
     
-    /* 🎉 Lorien'e hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş.
+    /* 🎉 Valena'ya hoş geldin ${member}! Hesabın ${moment(member.user.createdTimestamp).format("LLL")} tarihinde oluşturulmuş.
     
     Sunucuya erişebilmek için "V.Confirmed" odalarında kayıt olup isim yaş belirtmen gerekmektedir.
     
@@ -77,7 +77,7 @@ Seninle beraber ${member.guild.memberCount} kişiyiz. ${invite.inviter} tarafın
     
     };
   }
-     /* Lorien'e hoş geldin ${member} ! 
+     /* Valena'ya hoş geldin ${member} ! 
     ${isMemberFake ? `🚫` : ``}
     Hesabın ${moment(member.user.createdTimestamp).format("LLL")} (${moment(member.user.createdAt).add(5, 'gün').fromNow().replace("birkaç saniye önce", " ")}) oluşturulmuş. 🚫
     
@@ -86,7 +86,7 @@ Seninle beraber ${member.guild.memberCount} kişiyiz. ${invite.inviter} tarafın
     ${invite.inviter} ${total}. davetini gerçekleştirerek sunucumuzun ${member.guild.memberCount}. üyesi olmanı sağladı! İyi eğlenceler 🎉🎉🎉*/
     
     
-    /* 🎉 Lorien'e hoş geldin ${member} ! 
+    /* 🎉 Valena'ya hoş geldin ${member} ! 
     
     Hesabın ${moment(member.user.createdTimestamp).format("LLL")} (${moment(member.user.createdAt).add(5, 'gün').fromNow().replace("birkaç saniye önce", " ")}) oluşturulmuş ${isMemberFake ? `🚫` : ``}
     
