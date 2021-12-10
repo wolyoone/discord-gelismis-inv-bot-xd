@@ -9,7 +9,7 @@ module.exports = class {
 
   async run(message) {
     if (message.guild && !message.channel.permissionsFor(message.guild.me).missing("SEND_MESSAGES")) return;
-    let prefix = [".", "!"];
+    let prefix = ["."];
     let can = false;
     for (const içindeki of prefix) {
       if (message.content.startsWith(içindeki)) can = içindeki;
