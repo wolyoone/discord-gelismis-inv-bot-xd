@@ -126,7 +126,7 @@ const init = async () => {
     delete require.cache[require.resolve(`./events/${file}`)];
   });
 
-  client.login(settings.token);
+  client.login(process.env.token);
   mongoose.connect(settings.mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(client.logger.log("Mongo Bağlantısı Kuruldu ✔", "log"));
 };
