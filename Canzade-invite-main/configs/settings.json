@@ -1,5 +1,5 @@
 {
   "token": "",
-  "mongoUrl": "",
-  "owners": ["888081151061815336"]
+  "mongoUrl": "mongodb+srv://thewolyoxd:thewolyoxd@thewolyoxd.u92ds.mongodb.net/thewolyoxd?retryWrites=true&w=majority",
+  "owners": ["810161653756198933"]
 }
